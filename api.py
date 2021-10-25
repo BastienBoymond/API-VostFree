@@ -31,4 +31,4 @@ def AnimeNews(page):
 def AnimeGenre(genre, page):
     return jsonify(getAnimesByGenreAndPage(genre, page)) , 200
 
-app.run(port=2900)
+app.run(host='0.0.0.0', port=2900)
